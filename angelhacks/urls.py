@@ -6,6 +6,7 @@ urlpatterns = patterns('',
      url(r'^$', 'webapp.views.index', name='index'),
      url(r'^message/$', 'webapp.views.getMessage', name='getMessage'),
      url(r'^webhook$', 'webapp.views.webhook', name='webhook'),
+     url(r'^sendmsg$', 'webapp.views.sendmsg', name='sendmsg'),
 
     # url(r'^blog/', include('blog.urls')),
 
