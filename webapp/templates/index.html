@@ -12,6 +12,12 @@ $.get( "/message/", {} )
   .done(function( data ) {
      $( ".timeline" ).empty();
      for (var i = 0; i < data.length; i++) {
+   var article = '';
+   if (data[i].type == 'text'){
+       article =  '<p>' + data[i].content  +'</p>';
+   } else{
+            article = '<img src="'+ data[i].content + '" class="media-object">';
+   }
    var item = '<div class="col-xs-12 col-md-6 col-lg-4 item">'
             +'<div class="timeline-block">'
             +'  <div class="panel panel-default">'
@@ -19,19 +25,19 @@ $.get( "/message/", {} )
             +'        <div class="panel-heading">'
             +'          <div class="media">'
             +'            <div class="media-left">'
-            +'              <a href="">'
+            +'              <a href=""><img src="'+ data[i].profile_pic + '" class="media-object" height="50" width="50">'
             +'              </a>'
             +'            </div>'
             +'            <div class="media-body">'
             +'              <a href="#" class="pull-right text-muted"><i class="icon-reply-all-fill fa fa-2x "></i></a>'
-            +'              <a href="">' +data[i].userid +'</a>'
+            +'              <a href="">' +data[i].first_name + ' ' + data[i].last_name+'</a>'
 
-            +'              <span>on 15th January, 2014</span>'
+            +'              <span>' + data[i].timestamp +'</span>'
             +'            </div>'
             +'          </div>'
             +'        </div>'
             +'        <div class="panel-body">'
-            +'        <p>' + data[i].content  +'</p>'
+            +         article
             +'        </div>'
 
             +'        <ul class="comments">'
