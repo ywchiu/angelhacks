@@ -5,6 +5,8 @@ urlpatterns = patterns('',
     # Examples:
      url(r'^$', 'webapp.views.index', name='index'),
      url(r'^message/$', 'webapp.views.getMessage', name='getMessage'),
+     url(r'^webhook$', 'webapp.views.webhook', name='webhook'),
+
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),

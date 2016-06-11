@@ -17,3 +17,9 @@ def getMessage(request):
         context.append(change)
     return HttpResponse(json.dumps(context), content_type="application/json")
     #context = {'latest_question_list': 'latest_question_list'}
+
+def webhook(request):
+    if request.method == 'POST':
+        data = request.body
+        logger.debug(data)
+
