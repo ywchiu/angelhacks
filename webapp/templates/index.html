@@ -3,17 +3,71 @@
 {% endblock %}
 {% block jsmain %}
 <script>
-$.get( "/message/", function(){
+//$(".block").animate({left: "+=50", opacity: 1}, 500 );
+//$( "#go" ).click(function(){
+//mycode();
+//});
+function mycode() {
+$.get( "/message/", {} )
   .done(function( data ) {
-     $( "#searchres" ).empty();
+     $( ".timeline" ).empty();
      for (var i = 0; i < data.length; i++) {
-     var item = '<li class="span2">'
-             + '<div class="thumbnail">'
-             +   '</div>'
-             + '</li>'
-         $( "#searchres" ).append(item);
+   var item = '<div class="col-xs-12 col-md-6 col-lg-4 item">'
+            +'<div class="timeline-block">'
+            +'  <div class="panel panel-default">'
+
+            +'        <div class="panel-heading">'
+            +'          <div class="media">'
+            +'            <div class="media-left">'
+            +'              <a href="">'
+            +'              </a>'
+            +'            </div>'
+            +'            <div class="media-body">'
+            +'              <a href="#" class="pull-right text-muted"><i class="icon-reply-all-fill fa fa-2x "></i></a>'
+            +'              <a href="">' +data[i].userid +'</a>'
+
+            +'              <span>on 15th January, 2014</span>'
+            +'            </div>'
+            +'          </div>'
+            +'        </div>'
+            +'        <div class="panel-body">'
+            +'        <p>' + data[i].content  +'</p>'
+            +'        </div>'
+
+            +'        <ul class="comments">'
+            +'          <li clas="media">'
+            +'            <div class="media-body">'
+            +'              <div class="pull-right dropdown" data-show-hover="li">'
+            +'                <a href="#" data-toggle="dropdown" class="toggle-button">'
+            +'                </a>'
+            +'              </div>'
+            +'              <a href="" class="comment-author">Mary</a>'
+            +'              <span>Wow</span>'
+            +'              <div class="comment-date">2 days</div>'
+            +'            </div>'
+            +'          </li>'
+            +'<li><i class="fa fa-comments-o"></i> 9 Attendees <a href="#" class="btn btn-primary btn-stroke btn-xs pull-right">Auto Reply</a></li>'
+            +'          <li class="comment-form">'
+            +'            <div class="input-group">'
+
+            +'              <input type="text" class="form-control" />'
+
+            +'              <span class="input-group-btn">'
+            +'       <a href="" class="btn btn-default"><i class="fa fa-envelope"></i></a>'
+            +'    </span>'
+
+            +'            </div>'
+            +'          </li>'
+            +'        </ul>'
+            +'      </div>'
+
+            +'    </div>'
+            +'  </div>'
+         $( ".timeline.row" ).append(item);
       }
   });
-});
+setTimeout(mycode, 2000);
+};
+mycode();
 </script>
 {% endblock %}
