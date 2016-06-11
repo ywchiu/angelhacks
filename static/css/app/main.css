@@ -1,0 +1,242 @@
+.cover.profile {
+  border-width: 0 0 1px 0;
+}
+.cover.profile .wrapper .friends {
+  padding-left: 1px;
+}
+.cover.profile .wrapper .friends li a {
+  padding: 0;
+}
+#filter {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e2e9e6;
+}
+#filter form label {
+  color: #888;
+  margin-right: 10px;
+}
+#filter form .selectpicker {
+  font-weight: 400;
+}
+#filter form select.btn-primary {
+  padding: 5px 3px;
+}
+#filter form input.form-control {
+  background: #ffffff;
+}
+@media (min-width: 768px) {
+  #filter #users-filter-trigger {
+    display: inline-block;
+  }
+  #filter #users-filter-trigger .search-name input {
+    width: auto;
+    display: inline-block;
+  }
+}
+@media (max-width: 768px) {
+  #filter .bootstrap-select {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  #filter #users-filter-trigger {
+    display: block;
+  }
+  #filter #users-filter-trigger .form-control {
+    margin-bottom: 10px;
+  }
+}
+.messages-container .messages-list {
+  width: 250px;
+}
+.messages-container .messages-list .list-group-item {
+  padding: 0;
+}
+.messages-container .messages-list .list-group-item a {
+  color: #212121;
+  display: block;
+  text-decoration: none;
+}
+.messages-container .messages-list .list-group-item:hover {
+  background: #f9f9f9;
+}
+.messages-container .messages-list .list-group-item.active:hover {
+  background: #26a69a;
+}
+.messages-container .messages-list .list-group-item .media-body {
+  padding: 5px;
+}
+.messages-container .messages-list .list-group-item .media-body .user {
+  font-weight: 500;
+}
+.messages-container .messages-list .list-group-item .media-body .date {
+  float: right;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.4;
+}
+.messages-container .messages-list .list-group-item .media-body .message {
+  opacity: 0.8;
+}
+.messages-container .messages-list .list-group-item.active .media-body {
+  color: #fff;
+}
+.messages-container .media-body {
+  height: 100%;
+}
+.messages-container .media-body .text-muted {
+  color: #a1a1a1;
+}
+.messages-container .media-body .media {
+  margin-top: 0;
+}
+@media (max-width: 480px) {
+  .messages-container .messages-list {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .messages-container .messages-list .panel.panel-default {
+    position: relative;
+    overflow-x: auto;
+    background: none;
+    border: 0;
+    height: 50px;
+  }
+  .messages-container .messages-list .panel.panel-default ul {
+    height: 50px;
+  }
+  .messages-container .messages-list .list-group-item {
+    width: 50px;
+    border: 0;
+    float: left;
+  }
+  .messages-container .messages-list .list-group-item .media-left {
+    padding: 0;
+  }
+  .messages-container .messages-list .list-group-item .media-body {
+    display: none;
+  }
+  .messages-container .messages-list .list-group-item .media .media-left {
+    opacity: 0.6;
+  }
+  .messages-container .messages-list .list-group-item .media .media-left:hover {
+    opacity: 1;
+  }
+  .messages-container .messages-list .list-group-item.active {
+    opacity: 1;
+  }
+}
+@media (min-width: 480px) and (max-width: 1080px) {
+  .messages-container .messages-list {
+    width: auto;
+  }
+  .messages-container .messages-list .list-group-item .media .media-left {
+    padding: 0;
+  }
+  .messages-container .messages-list .list-group-item .media .media-body {
+    display: none;
+  }
+  .messages-container .messages-list .list-group-item .media .media-left {
+    opacity: 0.6;
+  }
+  .messages-container .messages-list .list-group-item .media .media-left:hover {
+    opacity: 1;
+  }
+  .messages-container .messages-list .list-group-item.active .media .media-left {
+    opacity: 1;
+  }
+}
+body.login {
+  position: initial;
+  background: url('../../images/lock-1.jpg');
+  padding-top: 0;
+}
+body.login #content {
+  max-width: 760px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+body.login .lock-container {
+  margin: auto;
+  width: 300px;
+}
+@media (min-width: 480px) {
+  body.login .lock-container {
+    bottom: 0;
+    height: 550px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+body.login .lock-container h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+body.login .lock-container .panel {
+  max-width: 300px !important;
+  background: #fff;
+  position: relative;
+}
+body.login .lock-container .panel img {
+  margin: 20px 0 10px;
+}
+body.login .lock-container .panel input {
+  margin-bottom: 10px;
+}
+body.login .lock-container .panel .btn {
+  margin-top: 10px;
+}
+body.login .lock-container .panel .forgot-password {
+  margin: 10px 0 0;
+  font-weight: 500;
+  color: #26a69a;
+  display: block;
+}
+.skins {
+  list-style: none;
+  padding: 0;
+  margin: 0 15px;
+  height: 50px;
+}
+.skins li {
+  display: inline-block;
+  margin-top: 16.5px;
+}
+.skins li span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.skins li.loading {
+  top: -3px;
+  position: relative;
+  width: 16px;
+}
+.skins li.loading span {
+  display: none;
+}
+.skins li.loading:after {
+  width: 16px;
+  text-align: center;
+  display: block;
+  content: "\f1ce";
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
