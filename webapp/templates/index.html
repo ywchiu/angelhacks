@@ -1,3 +1,19 @@
 {% extends "base.html" %}
 {% block main %}
 {% endblock %}
+{% block jsmain %}
+<script>
+$.get( "/message/")
+  .done(function( data ) {
+     $( "#searchres" ).empty();
+     for (var i = 0; i < data.length; i++) {
+     var item = '<li class="span2">'
+             + '<div class="thumbnail">'
+             +   '</div>'
+             + '</li>'
+         $( "#searchres" ).append(item);
+      }
+  });
+});
+</script>
+{% endblock %}
