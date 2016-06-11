@@ -3,7 +3,7 @@
 {% endblock %}
 {% block jsmain %}
 <script>
-$.get( "/message/")
+$.get( "/message/", function(){
   .done(function( data ) {
      $( "#searchres" ).empty();
      for (var i = 0; i < data.length; i++) {
