@@ -102,11 +102,30 @@ setTimeout(mycode, 10000);
 };
 mycode();
 function reorg() {
+    $.fn.tkIsotope = function () {
+
+        if (! this.length) return;
+
+        this.isotope({
+            layoutMode: this.data('layoutMode') || "packery",
+            itemSelector: '.item'
+        });
+
+        /*
+        this.isotope('on', 'layoutComplete', function(){
+            $(window).trigger('resize');
+        });
+        */
+
+    };
+
     $(function(){
 
+        setTimeout(function () {
             $('[data-toggle="isotope"]').each(function () {
                 $(this).tkIsotope();
             });
+        }, 300);
 
         $(document).on('domChanged', function(){
             $('[data-toggle="isotope"]').each(function(){
@@ -115,6 +134,7 @@ function reorg() {
         });
 
     });
+
 }
 
 </script>
