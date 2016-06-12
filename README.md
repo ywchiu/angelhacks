@@ -6,9 +6,10 @@
 - Wacom
 
 ### Screenshot
-[logo]: https://github.com/ywchiu/angelhacks/raw/master/kenko1.png "Dashboard"
-[logo]: https://github.com/ywchiu/angelhacks/raw/master/kenko2.png "Wacom"
-[logo]: https://github.com/ywchiu/angelhacks/raw/master/kenko3.png "chatbot"
+![alt text](https://raw.githubusercontent.com/ywchiu/angelhacks/master/kenko1.png "Dashboard")
+![alt text](https://raw.githubusercontent.com/ywchiu/angelhacks/master/kenko2.png "Wacom")
+![alt text](https://raw.githubusercontent.com/ywchiu/angelhacks/master/kenko3.png "Chatbot")
+
 
 ### Team Members:
 - May
